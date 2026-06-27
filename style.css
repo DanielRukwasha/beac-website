@@ -783,23 +783,136 @@ footer {
 
 .valeur-tag.bordeaux { background: var(--bordeaux); }
 
-/* ── FONDATEUR ── */
-.fondateur-grille {
+/* ── FONDATEUR (style Urafiki) ── */
+.section-fondateur {
+  background: var(--creme);
+  padding: 5rem 1.25rem;
+}
+
+.fondateur-bloc {
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 3rem;
-  align-items: start;
-  max-width: 960px;
+  grid-template-columns: 380px 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1060px;
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-  .fondateur-grille {
+/* Photo avec cadre décalé */
+.fondateur-photo-wrap {
+  position: relative;
+}
+
+.fondateur-photo-wrap::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: -14px;
+  bottom: -14px;
+  border: 3px solid var(--bordeaux);
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.fondateur-photo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+}
+
+/* Label */
+.fondateur-label {
+  font-family: Arial, sans-serif;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--bordeaux);
+  margin-bottom: 1.1rem;
+}
+
+/* Citation blockquote */
+.fondateur-citation {
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--texte);
+  border-left: 4px solid var(--bordeaux);
+  padding-left: 1.25rem;
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+
+/* Paragraphes bio */
+.fondateur-texte p:not(.fondateur-label) {
+  color: var(--texte-doux);
+  font-size: .97rem;
+  line-height: 1.8;
+  margin-bottom: .9rem;
+}
+
+/* Boutons */
+.fondateur-btns {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.75rem;
+}
+
+.btn-fondateur-plein {
+  background: var(--bordeaux);
+  color: white;
+  border: 2px solid var(--bordeaux);
+  padding: .75rem 1.6rem;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: .93rem;
+  font-weight: 700;
+  transition: background .2s, transform .15s;
+}
+.btn-fondateur-plein:hover {
+  background: var(--bordeaux-clair);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-fondateur-vide {
+  background: transparent;
+  color: var(--texte);
+  border: 2px solid var(--bordure);
+  padding: .75rem 1.6rem;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+  font-size: .93rem;
+  font-weight: 700;
+  transition: border-color .2s, transform .15s;
+}
+.btn-fondateur-vide:hover {
+  border-color: var(--bordeaux);
+  color: var(--bordeaux);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 860px) {
+  .fondateur-bloc {
     grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
-  .fondateur-grille img.portrait {
-    max-width: 260px;
+  .fondateur-photo-wrap {
+    max-width: 340px;
     margin: 0 auto;
+  }
+  .fondateur-photo {
+    height: 380px;
+  }
+  .fondateur-citation {
+    font-size: 1.15rem;
   }
 }
 
