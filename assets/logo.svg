@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- White circle background -->
+  <circle cx="100" cy="100" r="95" fill="white" stroke="#1a5c38" stroke-width="4"/>
+
+  <!-- Egg shell (bottom half broken) -->
+  <ellipse cx="100" cy="130" rx="32" ry="22" fill="#f5e6c8" stroke="#7a1f2b" stroke-width="2"/>
+  <!-- Broken egg top left shard -->
+  <path d="M72 118 Q78 108 88 112 Q85 122 72 118Z" fill="#f5e6c8" stroke="#7a1f2b" stroke-width="1.5"/>
+  <!-- Broken egg top right shard -->
+  <path d="M128 118 Q122 108 112 112 Q115 122 128 118Z" fill="#f5e6c8" stroke="#7a1f2b" stroke-width="1.5"/>
+  <!-- Crack lines -->
+  <path d="M88 112 L95 105 L100 110 L105 100 L112 112" fill="none" stroke="#7a1f2b" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Chick body (yellow, emerging from egg) -->
+  <ellipse cx="100" cy="102" rx="20" ry="22" fill="#f5c518"/>
+  <!-- Chick head -->
+  <circle cx="100" cy="82" r="14" fill="#f5c518"/>
+  <!-- Chick eye -->
+  <circle cx="104" cy="79" r="2.5" fill="#1a1a1a"/>
+  <circle cx="104.8" cy="78.2" r="0.8" fill="white"/>
+  <!-- Chick beak -->
+  <path d="M108 83 L114 82 L108 85Z" fill="#e8820c"/>
+  <!-- Chick wing left -->
+  <path d="M82 100 Q75 95 78 108 Q85 112 92 108Z" fill="#e8b400"/>
+  <!-- Chick wing right -->
+  <path d="M118 100 Q125 95 122 108 Q115 112 108 108Z" fill="#e8b400"/>
+  <!-- Chick tuft on head -->
+  <path d="M97 68 Q98 60 100 65 Q102 58 103 65 Q106 59 104 66" fill="none" stroke="#e8b400" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Olive branch (right side) -->
+  <path d="M120 95 Q135 80 145 68" fill="none" stroke="#1a5c38" stroke-width="2" stroke-linecap="round"/>
+  <!-- Olive leaves right branch -->
+  <ellipse cx="127" cy="90" rx="5" ry="3" fill="#2d8a50" transform="rotate(-30 127 90)"/>
+  <ellipse cx="132" cy="83" rx="5" ry="3" fill="#2d8a50" transform="rotate(-45 132 83)"/>
+  <ellipse cx="137" cy="76" rx="5" ry="3" fill="#2d8a50" transform="rotate(-55 137 76)"/>
+  <ellipse cx="143" cy="70" rx="4" ry="2.5" fill="#2d8a50" transform="rotate(-65 143 70)"/>
+  <!-- Olive fruits -->
+  <circle cx="130" cy="87" r="2.5" fill="#7a1f2b"/>
+  <circle cx="139" cy="73" r="2.5" fill="#7a1f2b"/>
+
+  <!-- Wheat ear (left side) -->
+  <path d="M80 95 Q65 80 55 68" fill="none" stroke="#c8860a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Wheat grains left branch -->
+  <ellipse cx="73" cy="90" rx="5" ry="3" fill="#e8a020" transform="rotate(30 73 90)"/>
+  <ellipse cx="68" cy="83" rx="5" ry="3" fill="#e8a020" transform="rotate(45 68 83)"/>
+  <ellipse cx="63" cy="76" rx="5" ry="3" fill="#e8a020" transform="rotate(55 63 76)"/>
+  <ellipse cx="57" cy="70" rx="4" ry="2.5" fill="#e8a020" transform="rotate(65 57 70)"/>
+  <!-- Wheat awns -->
+  <line x1="73" y1="87" x2="70" y2="81" stroke="#c8860a" stroke-width="1"/>
+  <line x1="68" y1="80" x2="65" y2="74" stroke="#c8860a" stroke-width="1"/>
+  <line x1="63" y1="73" x2="60" y2="67" stroke="#c8860a" stroke-width="1"/>
+
+  <!-- Text: BEAC -->
+  <text x="100" y="165" text-anchor="middle" font-family="Georgia, serif" font-size="14" font-weight="bold" fill="#7a1f2b" letter-spacing="3">BEAC</text>
+  <!-- Subtitle -->
+  <text x="100" y="180" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" fill="#1a5c38" letter-spacing="1">BASE EN ACTION</text>
+</svg>

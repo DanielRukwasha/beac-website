@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contactez Base en Action (BEAC) – adresse, formulaire de contact, Kinshasa, RDC."/>
+  <title>Contact – BEAC</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml"/>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap" aria-label="Accueil BEAC">
+      <img src="assets/logo.svg" alt="Logo BEAC"/>
+      <div class="logo-text">
+        <span class="org-name">Base en Action (BEAC)</span>
+        <span class="org-devise">Paix et Développement Durables</span>
+      </div>
+    </a>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">Qui sommes-nous</a></li>
+        <li><a href="objectifs.html">Nos objectifs</a></li>
+        <li><a href="membres.html">Membres</a></li>
+        <li><a href="gouvernance.html">Gouvernance</a></li>
+        <li><a href="ressources.html">Ressources</a></li>
+        <li><a href="statuts.html">Statuts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <p class="fil-ariane"><a href="index.html">Accueil</a> › Contact</p>
+  <h1>Nous contacter</h1>
+  <p>Pour toute question, partenariat, adhésion ou information — nous sommes à votre écoute</p>
+</div>
+
+<!-- CONTACT PRINCIPAL -->
+<section style="background:white;">
+  <div class="container">
+    <div class="contact-grille">
+      <!-- INFO -->
+      <div class="info-contact">
+        <h3>Coordonnées officielles</h3>
+
+        <div class="info-item">
+          <span class="icone">📍</span>
+          <div>
+            <strong>Siège social</strong>
+            <p>Avenue Trois Vallées, N°4B/1<br/>Quartier Joli Parc<br/>Commune de Ngaliema<br/>Kinshasa, République Démocratique du Congo</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="icone">✉️</span>
+          <div>
+            <strong>Adresse e-mail</strong>
+            <p><a href="mailto:baseenaction.beac@gmail.com" style="color:rgba(255,255,255,.85);">baseenaction.beac@gmail.com</a></p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="icone">🕐</span>
+          <div>
+            <strong>Horaires du Secrétariat</strong>
+            <p>Lundi – Vendredi : 8h00 – 17h00<br/>Samedi : 8h00 – 13h00<br/>Dimanche : Fermé</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <span class="icone">⚖️</span>
+          <div>
+            <strong>Statut légal</strong>
+            <p>ONG/D reconnue par le Ministère de la Justice et Garde des Sceaux de la RDC<br/>Accusé de réception N° F.92/39.170</p>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.2);">
+          <p style="font-size:.88rem;opacity:.8;font-style:italic;">Fondée le 17 avril 2020 par BAITSURA MUSOWA Schadrac et 17 membres fondateurs.</p>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE -->
+      <div class="formulaire-contact">
+        <h3>Envoyez-nous un message</h3>
+        <form id="formContact" action="mailto:baseenaction.beac@gmail.com" method="post" enctype="text/plain" novalidate>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div class="champ">
+              <label for="nom">Nom complet *</label>
+              <input type="text" id="nom" name="nom" placeholder="Votre nom" required autocomplete="name"/>
+            </div>
+            <div class="champ">
+              <label for="email">Adresse e-mail *</label>
+              <input type="email" id="email" name="email" placeholder="votre@email.com" required autocomplete="email"/>
+            </div>
+          </div>
+          <div class="champ">
+            <label for="sujet">Objet de votre message</label>
+            <select id="sujet" name="sujet">
+              <option value="">— Sélectionnez un objet —</option>
+              <option value="Demande d'adhésion à BEAC">Demande d'adhésion</option>
+              <option value="Partenariat avec BEAC">Partenariat / Collaboration</option>
+              <option value="Don ou soutien financier à BEAC">Don ou soutien financier</option>
+              <option value="Information sur les programmes de BEAC">Information sur les programmes</option>
+              <option value="Bénévolat avec BEAC">Bénévolat</option>
+              <option value="Autre demande à BEAC">Autre</option>
+            </select>
+          </div>
+          <div class="champ">
+            <label for="organisation">Organisation (facultatif)</label>
+            <input type="text" id="organisation" name="organisation" placeholder="Nom de votre organisation"/>
+          </div>
+          <div class="champ">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="6" placeholder="Décrivez votre demande en détail..." required></textarea>
+          </div>
+          <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem;">
+            <input type="checkbox" id="consent" name="consent" style="width:16px;height:16px;accent-color:var(--vert);"/>
+            <label for="consent" style="font-size:.83rem;color:var(--texte-doux);cursor:pointer;">J'accepte que mes données soient utilisées pour traiter ma demande conformément aux engagements de transparence de BEAC.</label>
+          </div>
+          <button type="submit" class="btn" style="background:var(--vert);color:white;border-color:var(--vert);width:100%;font-size:1rem;">
+            Envoyer le message ✉️
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARTE / LOCALISATION -->
+<section style="background:var(--creme);">
+  <div class="container">
+    <div class="section-titre">
+      <h2>Notre localisation</h2>
+      <p>Siège social de BEAC — Commune de Ngaliema, Kinshasa, RDC</p>
+    </div>
+    <!-- Carte stylisée (placeholder — intégrer OpenStreetMap ou Google Maps si souhaité) -->
+    <div style="background:white;border-radius:12px;overflow:hidden;box-shadow:0 2px 12px var(--ombre);max-width:800px;margin:0 auto;">
+      <div style="background:linear-gradient(135deg,var(--vert-pale),var(--bordeaux-pale));padding:3rem;text-align:center;min-height:280px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1rem;">
+        <div style="font-size:3.5rem;">📍</div>
+        <div>
+          <h3 style="color:var(--vert);font-size:1.3rem;margin-bottom:.4rem;">Base en Action (BEAC)</h3>
+          <p style="color:var(--texte-doux);font-size:.95rem;">Avenue Trois Vallées, N°4B/1</p>
+          <p style="color:var(--texte-doux);font-size:.95rem;">Quartier Joli Parc, Commune de Ngaliema</p>
+          <p style="color:var(--bordeaux);font-weight:bold;font-size:1rem;margin-top:.3rem;">Kinshasa, République Démocratique du Congo</p>
+        </div>
+        <a href="https://www.openstreetmap.org/search?query=Ngaliema%2C+Kinshasa%2C+RDC" target="_blank" rel="noopener" class="btn btn-primaire" style="background:var(--vert);color:white;border-color:var(--vert);margin-top:.5rem;">
+          Voir sur OpenStreetMap ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUTRES FAÇONS DE REJOINDRE BEAC -->
+<section style="background:white;">
+  <div class="container">
+    <div class="section-titre">
+      <h2>Comment nous rejoindre ?</h2>
+    </div>
+    <div class="grille" style="grid-template-columns:repeat(auto-fill,minmax(240px,1fr));">
+      <div class="carte">
+        <span class="carte-icone">🤝</span>
+        <h3>Devenir membre</h3>
+        <p>Rejoignez l'une de nos quatre catégories de membres et participez activement à notre mission de paix et de développement en RDC.</p>
+        <a href="membres.html" style="display:inline-block;margin-top:.75rem;color:var(--vert);font-size:.88rem;font-weight:bold;">Voir les catégories →</a>
+      </div>
+      <div class="carte bordeaux">
+        <span class="carte-icone">🌟</span>
+        <h3>Devenir partenaire</h3>
+        <p>Organisations, entreprises et institutions : collaborez avec BEAC dans le cadre de partenariats techniques ou financiers.</p>
+        <a href="ressources.html" style="display:inline-block;margin-top:.75rem;color:var(--bordeaux);font-size:.88rem;font-weight:bold;">En savoir plus →</a>
+      </div>
+      <div class="carte">
+        <span class="carte-icone">💝</span>
+        <h3>Faire un don</h3>
+        <p>Soutenez financièrement les programmes de BEAC pour un impact direct sur les communautés vulnérables de la RDC.</p>
+        <a href="ressources.html" style="display:inline-block;margin-top:.75rem;color:var(--vert);font-size:.88em;font-weight:bold;">Transparence financière →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grille">
+      <div class="footer-col">
+        <div class="footer-logo-wrap">
+          <img src="assets/logo.svg" alt="BEAC"/>
+          <span class="name">Base en Action</span>
+        </div>
+        <p>ONG/D congolaise sans but lucratif, fondée en 2020 à Kinshasa.</p>
+        <p style="margin-top:.5rem;font-style:italic;color:rgba(255,255,255,.6);">« Paix et Développement Durables »</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">Qui sommes-nous</a></li>
+          <li><a href="objectifs.html">Nos objectifs</a></li>
+          <li><a href="membres.html">Membres</a></li>
+          <li><a href="gouvernance.html">Gouvernance</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="statuts.html">Statuts</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Coordonnées</h4>
+        <p>📍 Avenue Trois Vallées, N°4B/1<br/>Quartier Joli Parc, Ngaliema<br/>Kinshasa, RDC</p>
+        <p style="margin-top:.75rem;">✉️ baseenaction.beac@gmail.com</p>
+      </div>
+      <div class="footer-col">
+        <h4>Statut légal</h4>
+        <p>ONG/D reconnue par le <strong>Ministère de la Justice et Garde des Sceaux de la RDC</strong></p>
+        <p style="margin-top:.5rem;">Accusé de réception N° F.92/39.170</p>
+      </div>
+    </div>
+    <div class="footer-bas">
+      <p>&copy; 2024 <strong>Base en Action (BEAC)</strong> — ONG/D reconnue par le Ministère de la Justice de la RDC. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Retour en haut">&#8679;</button>
+<script src="script.js"></script>
+</body>
+</html>
