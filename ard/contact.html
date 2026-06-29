@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Contactez l'ARD – Action Républicaine pour le Développement Durable, parti politique de la RDC."/>
+  <title>Contact – A.R.D.</title>
+  <link rel="stylesheet" href="../ard-style.css"/>
+  <link rel="icon" href="../assets/logo.png" type="image/png"/>
+</head>
+<body>
+
+<div class="plateforme-switcher">
+  <div class="switcher-inner">
+    <span class="switcher-label">Plateforme :</span>
+    <a href="../index.html" class="switcher-btn switcher-beac">🌿 BEAC — ONG</a>
+    <a href="index.html" class="switcher-btn switcher-ard actif">⚡ ARD — Parti politique</a>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <div class="ard-logo-emblem">ARD</div>
+      <div class="logo-text">
+        <span class="org-name">Action Républicaine pour le Dév. Durable</span>
+        <span class="org-devise">Pour une République forte et prospère</span>
+      </div>
+    </a>
+    <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="vision.html">Vision &amp; Idéologie</a></li>
+        <li><a href="structure.html">Structure</a></li>
+        <li><a href="programme.html">Programme</a></li>
+        <li><a href="membres.html">Membres</a></li>
+        <li><a href="statuts.html">Statuts</a></li>
+        <li><a href="contact.html" class="actif">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <p class="fil-ariane"><a href="index.html">Accueil ARD</a> › Contact</p>
+  <h1>Contactez l'ARD</h1>
+  <p>Secrétariat Général de l'Action Républicaine pour le Développement Durable — Kinshasa, RDC</p>
+</div>
+
+<section style="background:white;">
+  <div class="container">
+    <div class="contact-grille">
+      <!-- INFO -->
+      <div class="info-contact">
+        <h3>Coordonnées du Secrétariat Général</h3>
+
+        <div class="info-item">
+          <div class="icone">📍</div>
+          <div>
+            <strong>Siège du parti</strong>
+            <p>Kinshasa, République Démocratique du Congo</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icone">✉️</div>
+          <div>
+            <strong>Email</strong>
+            <p>secretariat.ard.rdc@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icone">🏛️</div>
+          <div>
+            <strong>Statut légal</strong>
+            <p>Parti politique notarié par la Direction de la Chancellerie et Garde des Sceaux — Ministère de la Justice de la RDC</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="icone">🌍</div>
+          <div>
+            <strong>Couverture nationale</strong>
+            <p>Implanté dans les 26 provinces de la République Démocratique du Congo</p>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid rgba(255,255,255,.2);">
+          <p style="font-size:.88rem;opacity:.8;font-style:italic;">Pour les questions relatives à la section BEAC (ONG) :</p>
+          <a href="../contact.html" style="color:var(--ard-or-clair);font-size:.9rem;">→ Contacter le bureau BEAC</a>
+        </div>
+      </div>
+
+      <!-- FORMULAIRE -->
+      <div class="formulaire-contact">
+        <h3>Envoyez-nous un message</h3>
+        <form action="mailto:secretariat.ard.rdc@gmail.com" method="post" enctype="text/plain">
+          <div class="champ">
+            <label for="nom">Nom complet *</label>
+            <input type="text" id="nom" name="nom" placeholder="Votre nom et post-nom" required/>
+          </div>
+          <div class="champ">
+            <label for="email">Adresse e-mail *</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required/>
+          </div>
+          <div class="champ">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" placeholder="+243 ..."/>
+          </div>
+          <div class="champ">
+            <label for="objet">Objet *</label>
+            <select id="objet" name="objet" required>
+              <option value="">-- Sélectionnez un objet --</option>
+              <option value="adhesion">Demande d'adhésion au parti</option>
+              <option value="information">Demande d'information</option>
+              <option value="programme">Question sur le programme</option>
+              <option value="structure">Question sur la structure</option>
+              <option value="partenariat">Proposition de partenariat / alliance</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="champ">
+            <label for="province">Province d'origine</label>
+            <input type="text" id="province" name="province" placeholder="ex. : Nord-Kivu, Kinshasa..."/>
+          </div>
+          <div class="champ">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-rouge" style="width:100%;margin-top:.5rem;font-size:1rem;padding:.85rem;">
+            Envoyer le message
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- INFO COMPLÉMENTAIRE -->
+    <div class="encadre or" style="margin-top:2rem;">
+      <p><strong>Pour adhérer au parti :</strong> Consultez la page <a href="membres.html" style="color:var(--ard-bleu);">Membres &amp; Adhésion</a> pour connaître les modalités et les catégories de membres disponibles. L'ARD est ouvert à tous les Congolais de plus de 18 ans qui adhèrent à ses valeurs républicaines.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grille">
+      <div class="footer-col"><div class="footer-logo-ard"><div class="ard-emblem-sm">ARD</div><span class="name">A.R.D.</span></div><p>Parti politique congolais notarié par le Ministère de la Justice de la RDC.</p></div>
+      <div class="footer-col"><h4>Navigation</h4><ul><li><a href="index.html">Accueil ARD</a></li><li><a href="vision.html">Vision &amp; Idéologie</a></li><li><a href="structure.html">Structure</a></li><li><a href="programme.html">Programme</a></li><li><a href="membres.html">Membres</a></li><li><a href="statuts.html">Statuts</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer-col"><h4>Autre plateforme</h4><p><a href="../index.html" style="color:var(--ard-or);">🌿 BEAC — Base en Action</a></p></div>
+      <div class="footer-col"><h4>Statut légal</h4><p>Notarié par le Ministère de la Justice et Garde des Sceaux de la RDC — Kinshasa</p></div>
+    </div>
+    <div class="footer-bas"><p>&copy; 2024 <strong>Action Républicaine pour le Développement Durable (A.R.D.)</strong> — Tous droits réservés.</p></div>
+  </div>
+</footer>
+
+<button id="scrollTop" aria-label="Retour en haut">&#8679;</button>
+<script src="../script.js"></script>
+</body>
+</html>

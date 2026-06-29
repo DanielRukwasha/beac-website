@@ -3,6 +3,17 @@
    Palette : Vert #1a5c38 | Bordeaux #7a1f2b | Blanc/Crème
    ============================================================ */
 
+/* --- SWITCHER PLATEFORME (BEAC ↔ ARD) --- */
+.plateforme-switcher{background:#05091a;padding:.35rem 1.25rem;}
+.switcher-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;gap:.75rem;}
+.switcher-label{color:rgba(255,255,255,.45);font-size:.73rem;font-family:Arial,sans-serif;}
+.switcher-btn{padding:.18rem .7rem;border-radius:3px;font-size:.73rem;font-weight:700;font-family:Arial,sans-serif;transition:all .2s;text-decoration:none;}
+.switcher-beac{background:rgba(26,92,56,.18);color:#7ecfa0;border:1px solid rgba(26,92,56,.4);}
+.switcher-beac.actif,.switcher-beac:hover{background:#1a5c38;color:white;}
+.switcher-ard{background:rgba(247,214,24,.18);color:#e0b84a;border:1px solid rgba(247,214,24,.4);}
+.switcher-ard:hover{background:#c89b2a;color:#0d2b6b;}
+/* -------------------------------------------------- */
+
 :root {
   --vert:      #1a5c38;
   --vert-clair:#2d8a50;
